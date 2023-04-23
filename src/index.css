@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.my-container {
+    @apply  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl 
+}
+
+.btn {
+    @apply inline-flex outline-0 items-center text-xl h-14 px-8 mb-3 font-medium text-white transition duration-200 rounded shadow-md md:mb-0 bg-[#00001A] hover:bg-[#F15D51]
+}
+
+.badge {
+    @apply inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-yellow-400
+}
+
+.active {
+    @apply font-medium tracking-wide text-[#F15D51] transition-colors duration-200 hover:text-[#F15D51]
+}
+
+.default {
+    @apply font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-[#F15D51]
+}
